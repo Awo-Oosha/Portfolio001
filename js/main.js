@@ -5,8 +5,6 @@ const menuNav = document.querySelector('.menu-nav');
 
 let showMenu = false;
 
-menuBtn.addEventListener('click', toggleMenu);
-
 function toggleMenu(){
     if(!showMenu) {
         hamburger.classList.add('open');
@@ -22,3 +20,15 @@ function toggleMenu(){
         showMenu = false;
     }
 }
+function navScroll() {
+    if(scrollY == 0){
+        nav.classList.remove('scroll');
+    } else {
+        nav.classList.add('scroll');
+    }
+  }
+  
+window.addEventListener('scroll', navScroll);
+menuBtn.addEventListener('click', toggleMenu);
+
+

@@ -49,6 +49,9 @@
     width: 100vw;
     opacity: 0.98;
     visibility: hidden;
+    &.scroll {
+        background-color: #606060;
+    }
 
     &.open {
         visibility: visible;
